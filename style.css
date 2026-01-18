@@ -7,14 +7,15 @@
 }
 body {
   background: radial-gradient(circle at top, #2b124f, #0b021a);
+}
 .navber{
     height: 70px;
     padding: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
+
 .logo{
     font-size: 20px;
     font-weight: bold;
@@ -132,4 +133,120 @@ h1 {
   background: transparent;
   color: #00ff9c;
   border: 1px solid #00ff9c;
+}
+.about-section {
+  position: relative;
+  padding: 100px 20px;
+  background:
+    linear-gradient(180deg, rgba(18,0,31,0.9), rgba(26,4,51,0.9)),
+    url("background.jpg"); 
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  color: #d8d4e4;
+}
+
+.about-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 14px;
+  color: #cfc3ff;
+  max-width: 750px;
+  margin: 0 auto 16px;
+  line-height: 1.6;
+}
+
+
+.stats {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.stat h3 {
+  color: #2aff9f;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.stat span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #bdb1ff;
+}
+
+
+@media (min-width: 900px) {
+  .stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .about-section h2 {
+    font-size: 38px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+   .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .big {
+    grid-row: span 2;
+  }
+
+  .wide {
+    grid-column: span 2;
+  }
+}
+.why-section {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.why-section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+
+.card {
+  background: #2a0f4d;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.card img {
+  width: 36px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #cfc3ff;
+  line-height: 1.6;
 }
