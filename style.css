@@ -5,6 +5,8 @@
   box-sizing: border-box;
   font-family: "Segoe UI", sans-serif;
 }
+body {
+  background: radial-gradient(circle at top, #2b124f, #0b021a);
 .navber{
     height: 70px;
     padding: 50px;
@@ -16,6 +18,7 @@
 .logo{
     font-size: 20px;
     font-weight: bold;
+    color: aliceblue;
     
 }
 .logo span{
@@ -24,7 +27,7 @@
 .menu a{
    margin: 0 20px;
   text-decoration: none;
-  color: #150e25;
+  color: #d8d4e4;
   font-size: 16px;
   transition: 0.3s;
 }
@@ -42,4 +45,91 @@
 }
 .btn:hover {
   transform: scale(1.05);
+}
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.wave {
+  position: absolute;
+  width: 40%;
+  opacity: 0.6;
+}
+
+.wave.left {
+  left: -5%;
+}
+
+.wave.right {
+  right: -5%;
+  transform: scaleX(-1);
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 600px;
+}
+
+.mic-wrapper {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff4ecd, #ffa24c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #00ff9c;
+  color: #000;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 20px 0 10px;
+}
+
+.tagline {
+  font-size: 15px;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #ff4ecd, #ffa24c);
+  color: white;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: #00ff9c;
+  border: 1px solid #00ff9c;
 }
