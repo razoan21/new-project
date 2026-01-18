@@ -1,0 +1,45 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+.navber{
+    height: 70px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.logo span{
+    color: #ff3cac;
+}
+.menu a{
+   margin: 0 20px;
+  text-decoration: none;
+  color: #150e25;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.menu a:hover {
+  color: #c91616;
+}
+.btn {
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  color: #c51b1b;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
